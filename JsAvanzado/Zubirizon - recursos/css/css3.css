@@ -1,0 +1,10 @@
+#product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  #logout-button {
+    margin-top: 1rem;
+  }

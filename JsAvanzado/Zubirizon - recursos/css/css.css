@@ -1,0 +1,30 @@
+@font-face {
+    font-family: zubirizon;
+    src: url(../fonts/zubirizon.otf);
+}
+.login-container{
+    background-image: url(../images/background.jpg);
+    font-family: zubirizon;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+input[type="text"], input[type="password"]{
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5;
+}

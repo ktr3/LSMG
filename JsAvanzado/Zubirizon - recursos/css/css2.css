@@ -1,0 +1,31 @@
+#add-product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  #add-product-form input[type="text"], #add-product-form input[type="file"], #add-product-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  #add-product-form input[type="file"] {
+    margin-bottom: 2rem;
+  }
+  
+  #add-product-form textarea {
+    height: 10rem;
+  }
+  
+  #add-product-button, #logout-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
