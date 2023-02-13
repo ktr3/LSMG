@@ -1,31 +1,83 @@
-#add-product-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  #add-product-form input[type="text"], #add-product-form input[type="file"], #add-product-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  
-  #add-product-form input[type="file"] {
-    margin-bottom: 2rem;
-  }
-  
-  #add-product-form textarea {
-    height: 10rem;
-  }
-  
-  #add-product-button, #logout-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
+@font-face {
+  font-family: zubirizon;
+  src: url(../fonts/zubirizon.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+#productAdd {
+  background-image: url(../images/background.jpg);
+  font-family: zubirizon;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-shadow: 1px 1px black;
+  color: #489be0;
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+form input[type="text"], form input[type="file"], form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #489be0;
+}
+
+form input[type="file"] {
+  margin-bottom: 2rem;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form input[type="submit"], #logout-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: #489be0;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover, #logout-button:hover {
+  background-color: white;
+  color: #4853e0;
+}
+
+#product-list {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-top: 2rem;
+  width: 50%;
+}
