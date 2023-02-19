@@ -37,14 +37,14 @@ function updateProductList() {
     let html = "";
     for (const product of products) {
         html += `
-      <div>
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        <p>Price: $${product.price}</p>
-        <p>Discount: ${product.discount}%</p>
-        <img src="${product.image}" alt="${product.name}" />
-      </div>
-    `;
+            <div>
+                <h2>${product.name}</h2>
+                <p>${product.description}</p>
+                <p>Price: $${product.price}</p>
+                <p>Discount: ${product.discount}%</p>
+                <img src="${product.image}" alt="${product.name}" />
+            </div>
+        `;
     }
     productList.innerHTML = html;
 }
@@ -60,13 +60,20 @@ function logOut() {
     // update the product list on the page
     updateProductList();
 
-
+    // redirect to the login page
+    window.location.href = "index.html";
 }
 
 // log out button event
-const logOut(){
-    document.getElementById("logout-button").addEventListener("click", function () {
-        window.location.href = "index.html";
-    }
-,)
+const logoutButton = document.querySelector("#logout-button");
+logoutButton.addEventListener("click", logOut);
+
+// log out function
+function logOut() {
+    // clear the products array and update the product list
+    products = [];
+    updateProductList();
+
+    // redirect the page to index.html
+    window.location.href = "index.html";
 }

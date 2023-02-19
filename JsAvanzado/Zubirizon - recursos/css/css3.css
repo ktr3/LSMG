@@ -1,10 +1,53 @@
+@font-face {
+  font-family: zubirizon;
+  src: url(../fonts/zubirizon.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+#pap{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+h1 {
+  font-family: zubirizon;
+  text-shadow: 1px 1px black;
+  color: #489be0;
+  margin-bottom: 2rem;
+}
+
 #product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  #logout-button {
-    margin-top: 1rem;
-  }
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-top: 2rem;
+  width: 50%;
+}
+
+#logout-button {
+  font-family: zubirizon;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: #489be0;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#logout-button:hover {
+  background-color: white;
+  color: #4853e0;
+}
